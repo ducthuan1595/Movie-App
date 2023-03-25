@@ -1,0 +1,43 @@
+.detail {
+  height: 60vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 88;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.left {
+  color: #fff;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 14px;
+}
+
+.left h4 {
+  margin: 3px 0;
+}
+
+.left p {
+  font-size: 13px;
+}
+
+.right {
+  border-radius: 50px;
+  margin: auto;
+}
+
+.image {
+  width: 640px;
+  border-radius: 14px;
+}

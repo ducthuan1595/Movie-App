@@ -1,0 +1,61 @@
+
+.distence {
+  padding: 60px 0;
+  background-color: #000;
+}
+
+form {
+  background-color: #fff;
+  margin: auto;
+  width: 50%;
+}
+
+.input {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-bottom: 2px solid #00bbec;
+  /* width: 50%; */
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.svg{
+  color: #ccc;
+  fill: currentColor;
+  display: inline-block;
+  /* padding-right: 20px; */
+  /* width: 100px;
+  height: 100px; */
+}
+
+input {
+  /* padding: 8px 14px; */
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 30px;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.actions button:first-child {
+  color: #333;
+  background-color: transparent;
+}
+.actions button:last-child {
+  color: #fff;
+  background-color: #00bbec;
+}
