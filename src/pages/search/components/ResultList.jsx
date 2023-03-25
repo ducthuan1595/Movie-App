@@ -31,7 +31,7 @@ const ResultList = ({ resultSearch }) => {
 
   return (
     <>
-      <div className={styled.result}>{resultCtx}</div>
+      <div className={styled.result}>{resultCtx ? resultCtx : (<p className={styled.empty}>Please, enter to find the movie.</p>)}</div>
     </>
   )
 }
