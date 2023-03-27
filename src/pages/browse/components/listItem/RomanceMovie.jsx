@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../../store/ProviderMovie";
 
 const RomanceMovie = (props) => {
+  const ctx = useContext(Context);
+
+  const handleRedirect = (movie) => {
+    ctx.getMovieDetail(movie);
+    ctx.setShowDetail(true);
+  }
   return (
     <>
       <h3>Lãng mạng</h3>
       <section>
         {props.movieItem.map((movie, index) => {
           return (
-            <div key={index}>
+            <div key={index} onClick={handleRedirect.bind(null, movie)}>
               <img
                 src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                 alt={movie.original_title}
